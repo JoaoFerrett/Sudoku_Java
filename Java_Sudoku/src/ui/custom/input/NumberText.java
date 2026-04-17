@@ -23,7 +23,7 @@ public class NumberText extends JTextField implements EventListener {
         this.setSize(dimension);
         this.setPreferredSize(dimension);
         this.setVisible(true);
-        this.setFont(new Font("Bree Serif", PLAIN, 20));
+        this.setFont(new Font("Bree Serif", PLAIN, 40));
         this.setHorizontalAlignment(CENTER);
         this.setDocument(new NumberTextLimit());
         this.setEnabled(!space.isFixed());

@@ -11,13 +11,13 @@ import ui.custom.input.NumberText;
 import ui.custom.panel.MainPanel;
 import ui.custom.panel.SudokuSector;
 
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JOptionPane;
-import javax.swing.JFrame;
+//import javax.swing.JButton;
+//import javax.swing.JPanel;
+//import javax.swing.JOptionPane;
+//import javax.swing.JFrame;
 import javax.swing.*;
 
-import java.awt.Dimension;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -45,6 +45,7 @@ public class MainScreen {
 
     public void buildMainScreen(){
         JPanel mainPanel = new MainPanel(dimension);
+        mainPanel.setBackground(Color.DARK_GRAY);
         JFrame mainFrame = new MainFrame(dimension , mainPanel);
         for(int r = 0; r < 9; r+=3){
             var endRow = r+2;
@@ -92,7 +93,7 @@ public class MainScreen {
                 case INCOMPLETE -> "The game is incomplete";
                 case COMPLETE -> "The game is completed";
             };
-            message += hasErrors ? " and have errors!" : " and have no errors";
+            message += hasErrors ? " and has errors!" : " and has no errors";
             showMessageDialog(null, message);
         });
         mainPanel.add(checkGameStatusButton);
