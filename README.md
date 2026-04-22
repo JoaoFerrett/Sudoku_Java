@@ -49,8 +49,8 @@ cd Sudoku_Java
 3. Compile e execute:
 
 ```bash
-javac src/main/app/Main.java
-java app.Main
+javac src/main/app/UIMain.java
+java app.UIMain
 ```
 
 ---
@@ -128,8 +128,8 @@ cd Java_Sudoku
 3. Compile and run:
 
 ```bash
-javac src/main/java/app/Main.java
-java app.Main
+javac src/main/java/app/UIMain.java
+java app.UIMain
 ```
 
 ---
